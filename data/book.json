@@ -1,0 +1,115 @@
+{
+  "id": "ductri-our-little-book",
+  "slug": "ductri",
+  "recipientName": "Em",
+  "cover": {
+    "title": "DUCTRI & TRAMY",
+    "subtitle": "OUR LITTLE BOOK",
+    "tagline": "seven days, countless memories",
+    "year": "2026",
+    "presetIndex": 0,
+    "images": [
+      "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1494774157365-9e04c6720e47?auto=format&fit=crop&w=800&q=80"
+    ]
+  },
+  "pages": [
+    {
+      "id": "page-001",
+      "template": "center-hero",
+      "memoryTitle": "Ngày đầu tiên",
+      "subtitle": "a new beginning",
+      "date": "02.09.2026",
+      "images": [
+        "https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&w=900&q=80"
+      ],
+      "message": "Mỗi tuần mới bắt đầu, điều đầu tiên anh nghĩ đến vẫn luôn là nụ cười của em.",
+      "quote": "Start each week with a heart full of gratitude and love."
+    },
+    {
+      "id": "page-002",
+      "template": "left-image",
+      "memoryTitle": "Khoảnh khắc nhỏ",
+      "subtitle": "little things",
+      "date": "03.09.2026",
+      "images": [
+        "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=80"
+      ],
+      "message": "Những thói quen nho nhỏ, cái nắm tay nhẹ nhàng... Đó chính là thứ hạnh phúc chân thật nhất.",
+      "quote": "It is the small moments that make life big."
+    },
+    {
+      "id": "page-003",
+      "template": "dual-photo",
+      "memoryTitle": "Ký ức đẹp",
+      "subtitle": "another memory",
+      "date": "04.09.2026",
+      "images": [
+        "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=900&q=80",
+        "https://images.unsplash.com/photo-1494774157365-9e04c6720e47?auto=format&fit=crop&w=900&q=80"
+      ],
+      "message": "Giữa tuần ngập tràn áp lực công việc, chỉ cần nhìn thấy tấm ảnh hai đứa là bao mệt mỏi tan biến.",
+      "quote": "Together is a beautiful place to be.",
+      "handwrittenCaption": "Kỷ niệm buổi chiều nắng ấm..."
+    },
+    {
+      "id": "page-004",
+      "template": "film-frame",
+      "memoryTitle": "Khoảnh khắc này",
+      "subtitle": "this moment",
+      "date": "05.09.2026",
+      "images": [
+        "https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=900&q=80"
+      ],
+      "message": "Có những khoảnh khắc anh ước thời gian có thể ngừng trôi.",
+      "quote": "Some moments are worth holding onto forever."
+    },
+    {
+      "id": "page-005",
+      "template": "polaroid",
+      "memoryTitle": "Nụ cười",
+      "subtitle": "smile",
+      "date": "06.09.2026",
+      "images": [
+        "https://images.unsplash.com/photo-1469371670807-013ccf25f16a?auto=format&fit=crop&w=900&q=80"
+      ],
+      "message": "Nụ cười rạng rỡ của em chính là món quà tuyệt vời nhất.",
+      "quote": "Your smile is my favorite visual in the world."
+    },
+    {
+      "id": "page-006",
+      "template": "collage",
+      "memoryTitle": "Thế giới nhỏ của chúng mình",
+      "subtitle": "our little world",
+      "date": "07.09.2026",
+      "images": [
+        "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=900&q=80",
+        "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=900&q=80"
+      ],
+      "message": "Thứ Bảy trôi qua thật bình yên. Chúng ta đi dạo qua từng góc phố nhỏ.",
+      "quote": "In our little world, everything feels just right.",
+      "handwrittenCaption": "Những bước chân thong dong..."
+    }
+  ],
+  "finalPage": {
+    "subtitle": "but not the end",
+    "images": [
+      "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1494774157365-9e04c6720e47?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1469371670807-013ccf25f16a?auto=format&fit=crop&w=600&q=80"
+    ],
+    "letter": "Gửi em yêu thương,\n\nCuốn sách nhỏ này không chỉ lưu giữ hình ảnh của những ngày vừa qua, mà là lời hứa anh muốn gửi đến em cho rất nhiều ngày tháng về sau.\n\nMỗi bức ảnh, mỗi dòng chữ anh viết ra đều đong đầy tình cảm chân thành nhất. Cảm ơn em đã đến và làm sáng bừng thế giới của anh.",
+    "signature": "— Đức Trí",
+    "closingQuote": "some stories are worth keeping."
+  },
+  "musicUrl": "https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3?filename=romantic-piano-112199.mp3",
+  "createdAt": "2026-09-02T22:00:00Z",
+  "updatedAt": "2026-10-15T10:32:19.950Z",
+  "published": true
+}

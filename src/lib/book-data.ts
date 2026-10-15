@@ -1,0 +1,198 @@
+import { BookData, CoverPreset } from './types';
+
+export const COVER_PRESETS: CoverPreset[] = [
+  {
+    id: 1,
+    name: 'Scrapbook Classic',
+    positions: [
+      { top: '8%', left: '8%', rotate: -6, zIndex: 1, width: '42%' },
+      { top: '6%', right: '10%', rotate: 4, zIndex: 2, width: '38%' },
+      { top: '34%', left: '26%', rotate: -2, zIndex: 5, width: '48%' },
+      { bottom: '10%', left: '6%', rotate: 5, zIndex: 3, width: '40%' },
+      { bottom: '12%', right: '8%', rotate: -4, zIndex: 4, width: '42%' },
+    ],
+  },
+  {
+    id: 2,
+    name: 'Polaroid Stack',
+    positions: [
+      { top: '10%', left: '12%', rotate: 5, zIndex: 2, width: '40%' },
+      { top: '12%', right: '14%', rotate: -7, zIndex: 1, width: '40%' },
+      { top: '32%', left: '30%', rotate: 1, zIndex: 5, width: '46%' },
+      { bottom: '14%', left: '10%', rotate: -4, zIndex: 4, width: '38%' },
+      { bottom: '8%', right: '10%', rotate: 6, zIndex: 3, width: '42%' },
+    ],
+  },
+  {
+    id: 3,
+    name: 'Vintage Pinboard',
+    positions: [
+      { top: '6%', left: '5%', rotate: -3, zIndex: 3, width: '44%' },
+      { top: '14%', right: '6%', rotate: 8, zIndex: 2, width: '38%' },
+      { top: '38%', left: '18%', rotate: -5, zIndex: 5, width: '44%' },
+      { bottom: '8%', left: '12%', rotate: 3, zIndex: 1, width: '42%' },
+      { bottom: '16%', right: '8%', rotate: -6, zIndex: 4, width: '40%' },
+    ],
+  },
+  {
+    id: 4,
+    name: 'Diagonal Drift',
+    positions: [
+      { top: '4%', left: '4%', rotate: -8, zIndex: 2, width: '40%' },
+      { top: '20%', right: '6%', rotate: 5, zIndex: 1, width: '42%' },
+      { top: '30%', left: '28%', rotate: -1, zIndex: 5, width: '44%' },
+      { bottom: '6%', left: '4%', rotate: 6, zIndex: 3, width: '40%' },
+      { bottom: '10%', right: '4%', rotate: -3, zIndex: 4, width: '44%' },
+    ],
+  },
+  {
+    id: 5,
+    name: 'Center Burst',
+    positions: [
+      { top: '4%', left: '16%', rotate: -5, zIndex: 1, width: '38%' },
+      { top: '4%', right: '16%', rotate: 4, zIndex: 2, width: '38%' },
+      { top: '30%', left: '22%', rotate: 0, zIndex: 5, width: '54%' },
+      { bottom: '4%', left: '8%', rotate: 5, zIndex: 3, width: '38%' },
+      { bottom: '4%', right: '8%', rotate: -4, zIndex: 4, width: '38%' },
+    ],
+  },
+  {
+    id: 6,
+    name: 'Cascading Flow',
+    positions: [
+      { top: '2%', left: '2%', rotate: -4, zIndex: 2, width: '46%' },
+      { top: '8%', right: '4%', rotate: 6, zIndex: 1, width: '40%' },
+      { top: '36%', left: '20%', rotate: -2, zIndex: 5, width: '50%' },
+      { bottom: '4%', left: '2%', rotate: 3, zIndex: 4, width: '42%' },
+      { bottom: '10%', right: '2%', rotate: -7, zIndex: 3, width: '40%' },
+    ],
+  },
+];
+
+export const DEFAULT_BOOK_DATA: BookData = {
+  id: 'ductri-our-little-book',
+  slug: 'ductri',
+  recipientName: 'Em',
+  cover: {
+    title: 'DUCTRI & TRAMY',
+    subtitle: 'OUR LITTLE BOOK',
+    tagline: 'seven days, countless memories',
+    year: '2026',
+    presetIndex: 0,
+    images: [
+      'https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1494774157365-9e04c6720e47?auto=format&fit=crop&w=800&q=80',
+    ],
+  },
+  pages: [
+    {
+      id: 'page-001',
+      template: 'center-hero',
+      memoryTitle: 'Ngày đầu tiên',
+      subtitle: 'a new beginning',
+      date: '02.09.2026',
+      images: [
+        'https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&w=900&q=80',
+      ],
+      message: 'Mỗi tuần mới bắt đầu, điều đầu tiên anh nghĩ đến vẫn luôn là nụ cười của em. Cảm ơn em vì đã biến những ngày bình thường nhất trở thành kỉ niệm vô giá.',
+      quote: 'Start each week with a heart full of gratitude and love.',
+    },
+    {
+      id: 'page-002',
+      template: 'left-image',
+      memoryTitle: 'Khoảnh khắc nhỏ',
+      subtitle: 'little things',
+      date: '03.09.2026',
+      images: [
+        'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=80',
+      ],
+      message: 'Những thói quen nho nhỏ, cái nắm tay nhẹ nhàng khi đi qua phố đông, hay cốc cà phê ấm áp em dành cho anh... Đó chính là thứ hạnh phúc chân thật nhất.',
+      quote: 'It is the small moments that make life big.',
+    },
+    {
+      id: 'page-003',
+      template: 'dual-photo',
+      memoryTitle: 'Ký ức đẹp',
+      subtitle: 'another memory',
+      date: '04.09.2026',
+      images: [
+        'https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=900&q=80',
+        'https://images.unsplash.com/photo-1494774157365-9e04c6720e47?auto=format&fit=crop&w=900&q=80',
+      ],
+      message: 'Giữa tuần ngập tràn áp lực công việc, chỉ cần nhìn thấy tấm ảnh hai đứa cùng cười nghêu ngao hôm nọ là bao mệt mỏi trong anh đều tan biến hết.',
+      quote: 'Together is a beautiful place to be.',
+      handwrittenCaption: 'Kỷ niệm buổi chiều nắng ấm...',
+    },
+    {
+      id: 'page-004',
+      template: 'film-frame',
+      memoryTitle: 'Khoảnh khắc này',
+      subtitle: 'this moment',
+      date: '05.09.2026',
+      images: [
+        'https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=900&q=80',
+      ],
+      message: 'Có những khoảnh khắc anh ước thời gian có thể ngừng trôi. Chỉ cần tĩnh lặng bên em, nghe tiếng mưa rơi ngoài cửa sổ và thì thầm những câu chuyện không hồi kết.',
+      quote: 'Some moments are worth holding onto forever.',
+    },
+    {
+      id: 'page-005',
+      template: 'polaroid',
+      memoryTitle: 'Nụ cười',
+      subtitle: 'smile',
+      date: '06.09.2026',
+      images: [
+        'https://images.unsplash.com/photo-1469371670807-013ccf25f16a?auto=format&fit=crop&w=900&q=80',
+      ],
+      message: 'Chiều thứ Sáu tan làm, hẹn gặp em ở góc quán quen. Nụ cười rạng rỡ của em chính là món quà tuyệt vời nhất để khép lại một tuần làm việc dài.',
+      quote: 'Your smile is my favorite visual in the world.',
+    },
+    {
+      id: 'page-006',
+      template: 'collage',
+      memoryTitle: 'Thế giới nhỏ của chúng mình',
+      subtitle: 'our little world',
+      date: '07.09.2026',
+      images: [
+        'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=900&q=80',
+        'https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=900&q=80',
+      ],
+      message: 'Thứ Bảy trôi qua thật bình yên. Chúng ta đi dạo qua từng góc phố nhỏ, ghé tiệm sách cũ, và tận hưởng không gian dành riêng cho hai đứa.',
+      quote: 'In our little world, everything feels just right.',
+      handwrittenCaption: 'Những bước chân thong dong...',
+    },
+    {
+      id: 'page-007',
+      template: 'grand-hero',
+      memoryTitle: 'Đến tuần sau',
+      subtitle: 'until next week',
+      date: '08.09.2026',
+      images: [
+        'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1000&q=80',
+      ],
+      message: 'Chủ Nhật khép lại 7 ngày kỷ niệm, nhưng tình cảm dành cho em thì chưa từng dừng lại. Cảm ơn em vì đã là một phần ấm áp và ý nghĩa nhất trong cuộc đời anh.',
+      quote: 'Love is not about how many days we share, but how much love we put into every single day.',
+    },
+  ],
+  finalPage: {
+    subtitle: 'but not the end',
+    images: [
+      'https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1494774157365-9e04c6720e47?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1469371670807-013ccf25f16a?auto=format&fit=crop&w=600&q=80',
+    ],
+    letter: `Gửi em yêu thương,\n\nCuốn sách nhỏ này không chỉ lưu giữ hình ảnh của những ngày vừa qua, mà là lời hứa anh muốn gửi đến em cho rất nhiều ngày tháng về sau. \n\nMỗi bức ảnh, mỗi dòng chữ anh viết ra đều đong đầy tình cảm chân thành nhất. Dù thời gian có trôi đi, anh hy vọng khi lật mở lại những trang sách này, em sẽ luôn nhớ rằng em luôn được yêu thương và trân trọng đến thế nào.\n\nCảm ơn em đã đến và làm sáng bừng thế giới của anh.`,
+    signature: '— Đức Trí',
+    closingQuote: 'some stories are worth keeping.',
+  },
+  musicUrl: 'https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3?filename=romantic-piano-112199.mp3',
+  createdAt: '2026-09-02T22:00:00Z',
+  updatedAt: '2026-10-15T17:00:00Z',
+  published: true,
+};

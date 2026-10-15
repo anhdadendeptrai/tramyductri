@@ -1,26 +1,72 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-warm-white: #FAF8F5;
+  --color-ivory: #FFFDF7;
+  --color-cream: #F5EFEB;
+  --color-beige: #E8DFD8;
+  --color-soft-brown: #6E5A4E;
+  --color-charcoal: #2B2825;
+  --color-dusty-pink: #EAD5D1;
+  --font-serif: var(--font-serif), Georgia, serif;
+  --font-handwriting: var(--font-handwriting), "Caveat", cursive;
+  --font-sans: var(--font-sans), system-ui, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+  --background: #FAF8F5;
+  --foreground: #2B2825;
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Custom Paper Texture SVG Overlay */
+.paper-texture {
+  background-image: radial-gradient(#6E5A4E 0.5px, transparent 0.5px), radial-gradient(#6E5A4E 0.5px, #FBF8F3 0.5px);
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
+  background-color: #FAF8F5;
+  opacity: 0.98;
+}
+
+.paper-sheet {
+  background: #FFFDF7;
+  box-shadow: 0 10px 30px -5px rgba(43, 40, 37, 0.08), 0 2px 6px -1px rgba(43, 40, 37, 0.04);
+}
+
+/* Scrapbook Tape Effect */
+.washi-tape {
+  background-color: rgba(245, 239, 235, 0.75);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  border-left: 2px dashed rgba(232, 223, 216, 0.9);
+  border-right: 2px dashed rgba(232, 223, 216, 0.9);
+}
+
+/* Custom 3D Page Perspective */
+.perspective-2000 {
+  perspective: 2000px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* Hide Scrollbar for clean book feel */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
