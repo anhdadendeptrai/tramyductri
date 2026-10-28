@@ -1,18 +1,14 @@
 import { NextResponse } from 'next/server';
-import fs from 'fs';
-import path from 'path';
+import { v2 as cloudinary } from 'cloudinary';
 
-const UPLOAD_DIR = path.join(process.cwd(), 'public', 'uploads');
-
-function ensureUploadDir() {
-  if (!fs.existsSync(UPLOAD_DIR)) {
-    fs.mkdirSync(UPLOAD_DIR, { recursive: true });
-  }
-}
+cloudinary.config({
+  cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+  api_key: process.env.CLOUDINARY_API_KEY,
+  api_secret: process.env.CLOUDINARY_API_SECRET,
+});
 
 export async function POST(req: Request) {
   try {
-    ensureUploadDir();
     const formData = await req.formData();
     const file = formData.get('file') as File | null;
 
@@ -23,13 +19,18 @@ export async function POST(req: Request) {
     const bytes = await file.arrayBuffer();
     const buffer = Buffer.from(bytes);
 
-    const ext = path.extname(file.name) || '.jpg';
-    const filename = `photo_${Date.now()}_${Math.random().toString(36).substring(2, 8)}${ext}`;
-    const filePath = path.join(UPLOAD_DIR, filename);
+    // Upload lên Cloudinary qua stream
+    const url = await new Promise<string>((resolve, reject) => {
+      const uploadStream = cloudinary.uploader.upload_stream(
+        { folder: 'tramy' },
+        (error, result) => {
+          if (error || !result) return reject(error);
+          resolve(result.secure_url);
+        }
+      );
+      uploadStream.end(buffer);
+    });
 
-    fs.writeFileSync(filePath, buffer);
-
-    const url = `/uploads/${filename}`;
     return NextResponse.json({ url });
   } catch (err) {
     console.error('Upload error:', err);
